@@ -13,13 +13,13 @@ $(function(){
 		return false;
 	});
 
-    //Slider
-    $('.bxslider').bxSlider({
+	//Slider
+	$('.bxslider').bxSlider({
 		auto: true,
 		pager: false,
 		controls: true,
 		touchEnabled: true
-    });
+	});
 
 	//Scroll animation
 	AOS.init({
@@ -32,40 +32,45 @@ $(function(){
 		$($(this).attr('data-copy-to')).html($(this).html());
 	});
 
-    //Roles nav
-    $('#role-1').addClass('active');
-    $('#role-1 .role-description').fadeIn();
-    $('#role-1 .role-description-in').slideDown();
-
-    function roleDeactivate(){
+	//Roles nav
+	if(bsIs('md') || bsIs('lg')){
+		$('#role-1').addClass('active');
+		$('#role-1 .role-description').fadeIn();
+		$('#role-1 .role-description-in').slideDown();
+	}
+	function roleDeactivate(){
 		var active = $('.role-item.active');
 		if(active.length){
 			active.find('.role-description').slideUp();
 			active.find('.role-description-in').fadeOut();
 			active.removeClass('active');
 		}
-    }
+	}
 
-    function roleActivate(p){
+	function roleActivate(p){
 		if(p.length){
 			p.find('.role-description').slideDown();
 			p.find('.role-description-in').fadeIn();
 			p.addClass('active');
 		}
-    }
+	}
 
-    $('.role-person-link').click(function(){
-    	p = $(this).parents('.role-item');
-		if(!$(this).hasClass('.role-dodavatel') && !p.hasClass('active')){
-			roleDeactivate();
-			roleActivate(p);
+	$('.role-person-link').click(function(){
+		if(bsIs('md') || bsIs('lg')){
+			p = $(this).parents('.role-item');
+			if(!$(this).hasClass('.role-dodavatel') && !p.hasClass('active')){
+				roleDeactivate();
+				roleActivate(p);
+			}
 		}
-    });
+	});
 
-    $('.btn-next-role').click(function(){
-		roleDeactivate();
-		roleActivate($($(this).attr('data-target')));
-    });
+	$('.btn-next-role').click(function(){
+		if(bsIs('md') || bsIs('lg')){
+			roleDeactivate();
+			roleActivate($($(this).attr('data-target')));
+		}
+	});
 
 	function bsIs(env){
 		return $('#environment-' + env).is(':visible');

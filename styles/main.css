@@ -396,16 +396,14 @@ a:hover .role-name, a:active .role-name, a:focus .role-name{
 	-webkit-text-fill-color: transparent;
 }
 .role-description{
+	max-width: 445px;
+	margin: 0 auto;
 	font-size: 15px;
 	font-weight: 300;
 	background-color: #fff;
 	line-height: 1.2;
-	position: absolute;
-	top: 0;
-	width: 445px;
 	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,.25);
 	box-shadow: 0 2px 5px rgba(0,0,0,.25);
-	display: none;
 }
 .role-description:before{
 	content: '';
@@ -441,7 +439,7 @@ a:hover .role-name, a:active .role-name, a:focus .role-name{
 	margin: 0 -15px;
 	display: block;
 }
-.btn-next-role{
+.btn-next-role, .bottom-link-iquest{
 	background-color: #EFAC52;
 	border-radius: 25px;
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
@@ -452,7 +450,8 @@ a:hover .role-name, a:active .role-name, a:focus .role-name{
 	color: #fff !important;
 	transition: all .3s;
 }
-.btn-next-role:hover, .btn-next-role:active, .btn-next-role:focus{
+.btn-next-role:hover, .btn-next-role:active, .btn-next-role:focus,
+.bottom-link-iquest:hover, .bottom-link-iquest:active, .bottom-link-iquest:focus{
 	background-color: #4590af;
 }
 
@@ -527,6 +526,12 @@ a:hover .role-name, a:active .role-name, a:focus .role-name{
 	    margin-right: 0;
 	    margin-bottom: 50px;
 		width: 200px;
+	}
+	.role-description{
+		position: absolute;
+		top: 0;
+		width: 445px;
+		display: none;
 	}
 }
 	
