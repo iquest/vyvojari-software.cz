@@ -1,0 +1,1 @@
+# vyvojari-software.cz
