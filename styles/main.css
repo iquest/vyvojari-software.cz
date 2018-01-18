@@ -531,10 +531,14 @@ a:hover .role-name, a:active .role-name, a:focus .role-name{
 		position: absolute;
 		top: 0;
 		width: 445px;
+		max-width: none;
 		display: none;
 	}
 }
 	
 /* * * Desktop wide * * */
 @media (min-width: 1200px) {
+	.role-description{
+		width: 550px;
+	}
 }
