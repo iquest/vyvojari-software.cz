@@ -590,6 +590,12 @@ a:hover .role-name, a:active .role-name, a:focus .role-name{
 		max-width: none;
 		display: none;
 	}
+	#content-wrap{
+		background-image: url(../images/line-v1.png);
+		background-repeat: no-repeat;
+		background-position: 50% 100px;
+		background-size: 100% 6093px;
+	}
 }
 	
 /* * * Desktop wide * * */
