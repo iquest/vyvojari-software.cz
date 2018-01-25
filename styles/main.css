@@ -465,6 +465,7 @@ a:hover .role-name, a:active .role-name, a:focus .role-name{
 }
 .role-description:before{
 	content: '';
+	display: none;
 	background-color: #fff;
     position: absolute;
     top: 100px;
@@ -586,6 +587,9 @@ a:hover .role-name, a:active .role-name, a:focus .role-name{
 	}
 	.role-person-link{
 		margin-bottom: 0;
+	}
+	.role-description:before{
+		display: block;
 	}
 	.role-item{
 	    left: -100px;
