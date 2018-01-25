@@ -360,6 +360,8 @@ h1{
 /* * Content * */
 #content-wrap{
 	padding: 50px 0;
+	margin: 0 auto;
+	max-width: 1903px;
 }
 .role-item{
     margin: 0 auto 50px;
@@ -373,7 +375,7 @@ h1{
 	font-weight: 300;
 	line-height: 34px;
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto 20px;
     width: 200px;
 	text-align: center;
 	color: #333;
@@ -510,6 +512,11 @@ a:hover .role-name, a:active .role-name, a:focus .role-name{
 .bottom-link-iquest:hover, .bottom-link-iquest:active, .bottom-link-iquest:focus{
 	background-color: #4590af;
 }
+#bottom-wrapper{
+	padding-bottom: 50px;
+	margin: 0 auto;
+	max-width: 1903px;
+}
 
 /* * * Tablet * * */
 @media (min-width: 768px) {
@@ -577,6 +584,9 @@ a:hover .role-name, a:active .role-name, a:focus .role-name{
 	.r75{
 		margin-left: 75%;
 	}
+	.role-person-link{
+		margin-bottom: 0;
+	}
 	.role-item{
 	    left: -100px;
 	    margin-right: 0;
@@ -591,10 +601,14 @@ a:hover .role-name, a:active .role-name, a:focus .role-name{
 		display: none;
 	}
 	#content-wrap{
-		background-image: url(../images/line-v1.png);
+		height: 6334px;
+		background-image: url(../images/line-v2.png);
 		background-repeat: no-repeat;
 		background-position: 50% 100px;
-		background-size: 100% 6093px;
+		background-size: 100% 6234px;
+	}
+	#bottom-wrapper{
+		padding-bottom: 100px;
 	}
 }
 	
