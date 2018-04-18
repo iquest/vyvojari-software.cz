@@ -518,6 +518,11 @@ a:hover .role-name, a:active .role-name, a:focus .role-name{
 	margin: 0 auto;
 	max-width: 1903px;
 }
+.role-dodavatel .role-photo{
+	background: #00DDD0 !important;
+}
+.role-dodavatel:hover .role-name, .role-dodavatel:active .role-name, .role-dodavatel:focus .role-name{
+}
 
 /* * * Tablet * * */
 @media (min-width: 768px) {
@@ -587,6 +592,9 @@ a:hover .role-name, a:active .role-name, a:focus .role-name{
 	}
 	.role-person-link{
 		margin-bottom: 0;
+	}
+	.role-description-in{
+		font-size: 18px;
 	}
 	.role-description:before{
 		display: block;
