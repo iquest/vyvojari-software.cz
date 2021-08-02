@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
-Host: http://www.vyvojarisoftware.cz/
-Sitemap: http://www.vyvojarisoftware.cz/sitemap.xml
+Host: https://www.vyvojarisoftware.cz/
+Sitemap: https://www.vyvojarisoftware.cz/sitemap.xml
